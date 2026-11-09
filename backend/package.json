@@ -1,0 +1,37 @@
+{
+  "name": "marketplace-backend",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch src/server.js",
+    "start": "node src/server.js",
+    "test": "vitest run",
+    "seed": "node src/scripts/seed.js",
+    "provision-admin": "node src/scripts/provisionAdmin.js",
+    "reindex": "node src/scripts/reindexProducts.js"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.1164.0",
+    "@aws-sdk/s3-request-presigner": "^3.1164.0",
+    "@elastic/elasticsearch": "^9.5.1",
+    "bcryptjs": "^3.0.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "express-rate-limit": "^7.5.0",
+    "helmet": "^8.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.16.0",
+    "multer": "^2.5.0",
+    "pdfkit": "^0.20.2",
+    "razorpay": "^2.9.8",
+    "redis": "^6.3.1",
+    "swagger-ui-express": "^5.0.1",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "supertest": "^7.1.1",
+    "vitest": "^5.1.0"
+  }
+}
